@@ -1,0 +1,120 @@
+body {
+    min-height: 1000px;
+    background-image: url('F_pengunjung/cover_bg.jpg'); 
+    background-size: cover;
+}
+
+h2 {
+    color: white;
+}
+
+p {
+    color: white;
+    font-size: 20px;
+}
+
+.sec {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec .content {
+    position: relative;
+    text-align: center;
+ 
+}
+
+.mxw800p {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.teamBx {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 100%;
+    margin-top: 40px;
+}
+
+.teamBx .member {
+    position: relative;
+    background: #000;
+    min-height: 300px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.teamBx .member .imgBox {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.teamBx .member .imgBx img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.teamBx .member .details {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    transition: 3s;
+    opacity: 0;
+}
+
+.teamBx .member:hover .details {
+    opacity: 1;
+}
+
+.teamBx .member .details h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    letter-spacing: 1px;
+}
+
+.teamBx .member .details h2 span {
+    display: block;
+    font-size: 12px;
+    font-weight: 300;
+}
+
+
+
+
+.btn {
+    font-size: 1em;
+    color: black;
+    background: yellow;
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 0px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 2s;
+    
+}
+
+.btn:hover {
+    letter-spacing: 6px;
+}
